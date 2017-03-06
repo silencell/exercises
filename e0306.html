@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"> 
+    <title>学生信息表和一个表单</title> 
+  </head>
+
+  <body>
+  <p>候选人信息如下：</p>
+  <table border="1">
+  <caption>学生信息表</caption>
+    <tr>
+      <th>姓名</th>
+      <th>班级</th>
+      <th>学号</th>
+    </tr>
+    <tr>
+      <td>Tom</td>
+      <td>一班</td>
+      <td>1401</td>
+    </tr>
+    <tr>
+      <td>Lana</td>
+      <td>三班</td>
+      <td>1403</td>
+    </tr>
+    <tr>
+      <td>Matthew</td>
+      <td>二班</td>
+      <td>1408</td>
+    </tr>
+  </table>
+  <p>choose the one you vote for</p>
+  <form>
+    <label for="tom">Tom</label>
+    <input type="radio" name="name" id="tom"> <br />
+    <label for="lana">Lana</label>
+    <input type="radio" name="name" id="lana"> <br />
+    <label for="matthew">Matthew</label>
+    <input type="radio" name="name" id="matthew"> <br />
+    <p>white down your reason:</p>
+    <textarea name="reason" style="width:100;height100"></textarea>
+    <p>white down your phone number:</p>
+    <input type="text" name="phone">
+    <p>choose languages you learned:</p>
+    <input type="checkbox" name="skill" value="c">c <br />
+    <input type="checkbox" name="skill" value="c++">c++ <br>
+    <input type="checkbox" name="skill" value="js">js <br>
+    <input type="checkbox" name="skill" value="java">java <br>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+</html>
