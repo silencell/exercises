@@ -2,12 +2,16 @@
 <html>
 
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
+    <style type="text/css">
+    .cname{color: red}
+    .cname~td{color: yellow}
+    </style> 
     <title>学生信息表和一个表单</title> 
   </head>
 
   <body>
-  <p>候选人信息如下：</p>
+  <h1>候选人信息</h1>
   <table border="1">
   <caption>学生信息表</caption>
     <tr>
@@ -16,7 +20,7 @@
       <th>学号</th>
     </tr>
     <tr>
-      <td>Tom</td>
+      <td class="cname">Tom</td>
       <td>一班</td>
       <td>1401</td>
     </tr>
@@ -33,14 +37,14 @@
   </table>
   <p>choose the one you vote for</p>
   <form>
-    <label for="tom">Tom</label>
+    <label for="tom" >Tom</label>
     <input type="radio" name="name" id="tom"> <br />
     <label for="lana">Lana</label>
     <input type="radio" name="name" id="lana"> <br />
     <label for="matthew">Matthew</label>
     <input type="radio" name="name" id="matthew"> <br />
     <p>white down your reason:</p>
-    <textarea name="reason" style="width:100;height100"></textarea>
+    <textarea name="reason" rows="5" cols="20"></textarea>
     <p>white down your phone number:</p>
     <input type="text" name="phone">
     <p>choose languages you learned:</p>
