@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>居中和扇形</title>
+<style>
+.main{
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	margin: -100px 0 0 -200px;
+}
+.left{
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border: 25px solid #fc0;
+    border-bottom-right-radius: 50px;
+}
+.right{
+	position: relative;
+    left: 350px;
+    top: 100px;
+	width: 0px;
+	height: 0px;
+	border: 25px solid #fc0;
+    border-top-left-radius: 50px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<div class="left"></div>
+<div class="right"></div>
+</div>
+</body>
+</html>
